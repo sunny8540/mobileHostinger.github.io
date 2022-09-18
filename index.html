@@ -1,0 +1,1272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    body{
+        background-color: ;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        /* background-color:  */
+        /* background-color: #f0ecf8; */
+/* #f0ecf8; */
+
+    }
+ 
+    
+    .header {
+        width: 100vw;
+        opacity: 0.9;
+        height: 5rem;
+        background-color:#fff;
+        box-shadow: 0rem 0rem .4rem #6f42c1;
+        display: flex;
+        justify-content: row;
+    }
+    
+    img{
+        cursor: pointer;
+        width: 2rem;
+        height: 2rem;
+        margin-top:1.5rem;
+        /* padding-top: .7rem; */
+        /* padding: 1rem; */
+        margin-left: 1.2rem;
+    }
+    
+    .logoName{
+        margin-top: 1.5rem;
+        position: absolute;
+        cursor: pointer;
+        line-height: 2rem;
+        font-weight: 600;
+        font-size: 1.5em;
+        color:#6f42c1;
+        margin-left: .7rem;
+    }
+    /* .headerLOGO{ */
+        /* margin-top: 2rem;
+        padding: 1.2rem; */
+    /* }   */
+    .containt1 ul li{
+        display: inline;
+        list-style: none;
+        line-height: 5rem;
+        margin-right: 2rem;
+        font-weight: 500;
+        cursor: pointer;
+        color: #6f42c1;
+        }
+
+    .contiant2  ul  li{
+        /* font-size: 1.1rem; */
+        line-height: 5rem;
+        font-weight: 500;
+        color: #6f42c1;
+        cursor: pointer;
+        display: inline;
+        list-style: none;
+    }
+    button{
+        border: none;
+        background-color: #fff;
+    }
+    .contiant2 ul {
+        margin-left: 5rem;
+        float: right;
+    }
+    .contiant2 ul li :hover{
+        opacity: 0.7;
+    }
+    .containt1 ul{
+
+        margin-left: 40rem;
+    }
+    .ones{
+        width: 1.5rem;
+        height: 1.5rem;
+    }
+    button{
+        width: 6rem;
+        height: 2rem;
+        border:.1rem solid black;
+    }
+    .para{
+        padding-left: .3rem;
+        position: absolute;
+}
+ 
+.cart{
+    margin-left: 3em;
+}
+    .containt{
+        position: absolute;
+        margin-left:18rem;
+   }
+   .heade,.heade1{
+
+font-weight: 700;
+font-size: 8rem;
+}
+.heade{
+    position: absolute;
+    margin-top: 10.8rem;
+    margin-left: 5.5rem;
+text-orientation: sideways;
+opacity: 0.2;
+font-size: 3rem;
+color: #6f42c1;
+/* text-shadow: 0rem 0rem 1rem gray; */
+}
+.heade1{
+    margin-top:12rem ;
+    position: absolute;
+        opacity: 0.8;
+        font-size: 6rem;
+        color: #6f42c1;
+        margin-left: 6rem;
+    }
+    .onees{
+        position: absolute;
+        color: #a487d7;
+        font-weight: 600;
+        margin-top: 15rem;
+        margin-left: 39rem;
+        transform: rotate(90deg);
+        font-size: 2rem;
+    }
+    .onees1{
+        position: absolute;
+        color: #6f42c1;
+        font-weight: 600;
+        font-size: 4rem;
+        margin-top: 12rem;
+        margin-left: 35rem;
+        transform: rotate(0);
+        /* transform:rotate(-45deg); */
+        font-size: 2rem;
+    }
+    .onees2{
+        position: absolute;
+        color: #a487d7;
+        font-weight: 600;
+        font-size: 4rem;
+        margin-top: 18rem;
+        margin-left: 14rem;
+        transform: rotate(180deg);
+    }
+    .main1{
+        width: 100vw;
+        height:40rem;
+        background-color: #f0ecf8;
+    }
+
+    .save{
+        text-align: center;
+        font-weight: 700;
+        font-size: 3rem;
+        margin-top: 3rem;
+        color:#6f42c1;
+    }
+    .rupee{
+        text-align: center;
+        align-items: center;
+    }
+    .rupee1{
+        font-size:5rem ;
+        font-weight: 600;
+        color: #2f1c6a;
+    }
+    .ya{
+        margin-top: .6rem;
+        font-weight: 700;
+        color:#2f1c6a;
+        font-size: 1.5rem;
+        margin-left: -.9rem;
+        /* margin-right: 2rem; */
+        position: absolute;
+    }
+    .rupee2{
+        font-size: 1.5rem;
+        font-weight: 500;
+        color: #2f1c6a;
+
+    }
+    .savee{
+        text-align: center;
+        font-size: 1rem;
+        font-weight: 600;
+        color: #a487d7;
+    }
+    .get{
+        text-align: center;
+        line-height: 2.4rem;
+        font-size: 1.2rem;
+        font-weight: 400;
+        cursor: pointer;
+        align-items: center;
+        color:#fff;
+        opacity: 0.7;
+        border-radius: 1.2rem;
+        width: 11rem;
+        height: 2.5rem;
+        background-color: crimson;
+        margin-left:37rem;
+        margin-top: 2rem;
+
+    }
+    .get:hover{
+        opacity: 1;
+        transition: 400ms;
+        }
+        .gete{
+            font-size: 1rem;
+            font-weight: 500;
+            margin-left: 32rem;
+            margin-top: 1rem;
+            color: #6f42c1  ;
+        }
+        .gete1{
+            font-size: 2.5rem;
+            font-weight: 500;
+            margin-left: 29rem;
+            margin-top: 1rem;
+            color: #6f42c1  ;
+
+        }
+        .gete2{
+            font-size: 1rem;
+            font-weight: 400;
+            margin-top: 1rem;
+            text-align: center;
+            color:gray;
+            opacity: 0.7;
+        }
+        .box1{
+            margin:5rem 10rem ;
+            width :75%;
+            border-radius: .4rem;
+            height: 35rem;
+            border: .1rem solid silver;
+        }
+        .headerBox{
+            font-weight: 500;
+            color:#6f42c1 ;
+            font-size: 2rem;
+        }
+        .text{
+            transform: rotate(-90deg);
+            text-align: center;
+            position: absolute;
+            margin-top: 2.7rem;
+            margin-left: -6rem;
+    }
+    .text1{
+        margin-top:-2.7rem ;
+        position: absolute;
+    }
+    .c21{
+    color:#2f1c6a;
+}
+.r{
+    font-size: 1.1rem;
+    font-weight: 700;
+}
+.m{
+    font-size: 3rem;
+    font-weight: 700;
+}
+.moun{
+    font-weight: 700;
+}
+.c212{
+    font-weight: 700;
+    color: #6f42c1;
+
+}
+.box1{
+    display: flex;
+    justify-content: row;
+}
+.butn{
+    font-weight: 600;
+    width: 7rem;
+    cursor: pointer;
+    color: #6f42c1;
+    border-radius: 2rem;
+    line-height: 2.5rem;
+    text-align: center;
+    background-color: #c3b4fe;
+    margin-left: 2rem;
+    margin-top: 1rem;
+}
+.butn:hover{
+    background-color: #6f42c1;
+    color: black;
+    transition: 400ms;
+}
+.c2{
+    margin-left: 6rem;
+}
+ul li{
+    list-style: none;
+    margin-bottom: .1rem;
+    cursor: pointer;
+    color: #6f42c1;
+}
+.box1 ul li:hover{
+color:  #a487d7;
+transition: 200ms;
+}
+.c1{
+    padding: 1rem 1rem;
+}
+.c2122{
+    margin-top: .6rem;
+}
+.header{
+    z-index: 2;
+    position: fixed;
+}
+.c3{
+    margin-top: 1rem;
+    margin-left: 4em;
+}
+.h{
+    /* position: absolute; */
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    color: #ddd;
+    width: 15rem;
+}
+.control{
+    font-size: 3rem;
+    text-align: center;
+    font-weight: 600;
+    color:#6f42c1 ;
+    opacity: 1;
+}
+.controlUL{
+
+    display: flex;
+    justify-content: row;
+    /* padding: 1rem 2rem; */
+    /* margin: 1rem 2rem; */
+}
+.cc1,.cc2,.cc3{
+    flex: 1;
+        margin-left: 6rem;
+}
+.cc1 ul li {
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin-top: 1rem;
+   
+}
+.cc1 ul li {
+    margin-top: 2rem;
+   
+}.cc2 ul li {
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin-top: 2rem;
+   
+}.cc3 ul li {
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin-top: 2rem;
+   
+}
+a{
+    text-decoration: none;
+    color: #2f1c6a;
+}
+a:hover{
+opacity: 0.8;
+}
+.find{
+    margin: 4rem 0rem;
+    width: 100vw;
+    height: 14rem;
+    background-color: #f6f3fb;
+    /* opacity: 0.1; */
+}
+.find1{
+    padding-top: 1rem;
+    color: #2f1c6a;
+    font-weight: 600;
+    font-size: 2.5rem;
+    text-align: center;
+}
+.find2{
+    text-align: center;
+color: #2f1c6a;
+}
+.search{
+    margin-top: 2rem;
+    margin-left: 24rem;
+    position: absolute;
+    display: flex;
+    justify-content: row;
+}
+.search input{
+    padding-left: 1.5rem;
+    border: 1px solid #6f42c1;
+    border-radius: 1.4rem;
+    height: 2.5rem;
+    width: 30rem;
+}
+.search input:hover{
+    border: 1px solid #2f1c6a;
+}
+.se{
+    margin-left: 24rem;
+    position: absolute;
+}
+.se button{
+    cursor: pointer;
+    background-color: #fff;
+    font-size: 1rem;
+    border-radius: 1.5rem;
+    height: 2.5rem;
+    float: right;
+}
+.se button:hover{
+    background-color:#ebe4f6;
+    transition: 300ms;
+
+}
+.info{
+    display: flex;
+    justify-content: row;
+}
+.b1{
+    width: 20rem;
+    height: 17rem;
+    margin-left: .6rem;
+    padding-left: .9rem;
+    border: .1rem solid #fff;
+    box-shadow: 0rem 0rem .3rem #2f1c6a;
+}
+.containtBOX{
+    color:gray;
+    text-align: left;
+    font-size: 1rem;
+}
+.headerBOX1{
+    font-size: 1rem;
+    font-weight: 500;
+    color: gray;
+}
+.headerBOX2{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: #2f1c6a;
+}
+.c{
+    margin-top: 2rem;
+}
+ 
+.anc a{
+    text-decoration: underline;
+
+}
+.anc a:hover{
+    color:#2f1c6a;
+    transition: 300ms;  
+}
+.user1{
+    font-size: 2.5rem;
+    color: #2f1c6a;
+    text-align: center;
+    margin-top: 3rem;
+    padding-top: 2rem;
+    font-weight: 600;
+    margin-left: 27rem;
+}
+ 
+.h{
+    padding-top: 2rem;
+    font-size: 1.5rem;
+    color: #6f42c1  ;
+}
+.c{
+    color: gray;
+}
+.user{
+
+display: flex;
+}
+.w{
+    width: 15rem;
+    margin-left: 9rem;
+}
+.low{
+    color: #2f1c6a;
+    font-weight: 600;
+    font-size: 2.3rem;
+    margin-left: 26rem;
+    margin-top: 7rem;
+    padding-top: 2rem;
+}
+.low1{
+    color: #2f1c6a;
+    font-size: .7;
+    margin-top: .7rem;
+    margin-left:23rem ;
+}
+.sear{
+    width: 15rem;
+    text-align: center;
+    line-height: 3rem;
+    height: 3rem;
+    margin-left: 33rem;
+    margin-top: 2rem;
+    cursor: pointer;
+    background-color: #2f1c6a;
+    color: #fff;
+    font-size: 1.1rem;
+    border-radius: 67.89rem;
+}
+.sear:hover{
+    color: #f6f3fb;
+    background-color: #6f42c1;
+    transition: 400ms;
+}
+.fot{
+    width: 100vw;
+    height: 15rem;
+    background-color: #ebe4f6;
+}
+.footer{
+    display: flex;
+    margin-top: 5rem;
+    margin-left: 7rem;
+    justify-content: row;
+
+}
+.r1,.r2,.r3,.r4{
+    flex:1
+}
+p{
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: #2f1c6a;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+.r1 ul li a{
+    color: gray;
+    padding: .1rem 0rem;
+}
+.r1 ul li a:hover{
+    color: #6f42c1;
+}
+.r2 ul li a{
+    color: gray;
+    padding: .1rem 0rem;
+}
+.r2 ul li a:hover{
+    color: #6f42c1;
+}
+.r3 ul li a{
+    color: gray;
+    padding: .1rem 0rem;
+}
+.r3 ul li a:hover{
+    color: #6f42c1;
+}
+.r4 ul li a{
+    color: gray;
+    padding: .1rem 0rem;
+}
+.r4 ul li a:hover{
+    color: #6f42c1;
+}
+.footer1{
+    width: 100vw;
+    height: 5rem;
+    margin-top: 5rem;
+    background-color: #ede8f8;
+}
+.footer1 p1{
+    /* margin-top:2rem ; */
+    line-height: 5rem;
+    font-size:.8rem ;
+    color: gray;
+    margin-left: 8rem;
+    cursor: pointer;
+}
+.footer1 p1:hover{
+    color:#6f42c1;   
+}
+.footer1 p2{
+ /* margin-top:2rem ; */
+ line-height: 5rem;
+ font-size:.8rem ;
+ color: gray;
+ margin-left: 8rem;
+ cursor: pointer;
+}
+.footer1 p2:hover{
+    color: #6f42c1;
+
+}
+.containt1 ul li:hover{
+    color: #2f1c6a;
+}
+.contiant2:hover{
+    color :#2f1c6a;  
+}
+.containt:hover{
+    cursor: pointer;
+}
+@media screen and (max-width:350px){
+
+.header{
+    height: 3rem;
+    opacity: 0.9;
+
+}
+img{
+    width: 1.2rem;
+    height: 1.3rem;
+    cursor: pointer;
+    margin-left: .7rem;
+    margin-top: .8rem;
+}
+.logoName{
+    margin-top: .8rem;
+    position: absolute;
+    cursor: pointer;
+    line-height: 1.4rem;
+    font-weight: 400;
+    font-size: .9rem;
+    margin-left: .2rem;
+}
+.containt1 ul li{
+    display: inline;
+    list-style: none;
+    margin-right:.1rem ;
+    line-height: 3rem;
+    font-size: .5rem;
+    font-weight: 400;
+    cursor: pointer;
+    
+}
+
+.containt1 ul{
+    /* right: 0; */
+    /* display: inline; */
+    margin-left: 5.5rem;
+}
+.contiant2 ul{
+
+        margin-left: 0rem;
+}
+.one{
+    position: absolute;
+    margin-top: 0rem;
+    line-height: 2rem;
+    height: 1rem;
+    padding-top: 0rem;
+    width: 1rem;
+    margin-top: 1rem;
+}
+.para{
+    margin-top: -1rem;
+    margin-left: 1.4rem;
+    position: absolute;
+}
+.ones{
+    width: 1rem;
+    height: 1rem;
+    margin-left: 2rem;
+    position: absolute;
+
+}
+.a{
+    margin-left: 3rem;
+}
+.contiant2 ul li{
+    font-size: .5rem;
+}
+
+.containt{
+    margin-top: 3rem;
+    margin-left: -4.9rem;
+}
+.heade1{
+    
+    font-size: 3rem;
+}
+.heade{
+    font-size:2rem ;
+}
+.onees2{
+    margin-top: 15rem;
+    font-size: 2rem;
+    margin-left: 12.5rem;
+}
+.onees{
+    font-size: 1rem;
+    margin-top: 13.7rem;
+    margin-left: 22.5rem;
+}
+.onees1{
+    
+font-size: 1rem;
+margin-top: 12rem;
+margin-left: 18rem;
+}
+.save{
+    margin-top: 1rem;
+    font-size: 1.5rem;
+}
+.rupee1{
+    font-size: 3rem;
+}
+.ya{
+    font-size: 1.5rem;
+}
+.rupee2{
+    font-size: 1rem;
+}
+.savee{
+    font-size: .8rem;
+}
+.get{
+    margin-left: 5rem;
+}
+.gete{
+    font-size: 1rem;
+    text-align: center;
+    margin-left: 0rem;
+}
+.gete1{
+    
+    font-size: 1.7rem;
+    margin-left:1.3rem ;
+}
+.gete2{
+    font-size: .6rem;
+}
+.text,.text1{
+    display: none;
+}
+.box1{
+    box-shadow: 0rem 0rem .1rem #6f42c1;
+    display: block;
+    height:78rem;
+    margin-left: 2rem;
+}
+.c1{
+    position: absolute;
+    font-size: .7rem;
+    margin-top: 10rem;
+
+
+}
+.c2{
+    margin-top: 35rem;
+    position: absolute;
+    font-size: .7rem;
+    margin-left: 1rem;
+}
+.c3{
+    margin-top: 54rem;
+    position: absolute;
+    font-size: .7rem;
+
+    margin-left: 1rem;
+}
+.c21{
+
+    margin-top: 5rem;
+    margin-left: .8rem;
+}
+.butn{
+    width: 5rem;
+    font-size: .7rem;
+    line-height: 2rem;
+    margin-left: 3.5rem;
+}
+.c21202{
+    margin-top: -39rem;
+    position: absolute;
+}
+.controlUL
+{
+    display: block;
+    /* font-display: ; */
+}
+.cc1{
+    margin-top: 1rem;
+    box-shadow: 0rem 0rem .7rem  #6f42c1;
+    margin-left: 3.5rem;
+    width: 15rem;
+    text-align: center;
+    padding-bottom: 2rem;
+    /* padding-left: .5rem; */
+    border: .1rem solid gray;
+}
+.cc1 ul li{
+    font-size: 1rem;
+    text-shadow: 0rem 0rem .1rem black;
+    /* list-style-type: disc; */
+
+}
+.control u{
+
+    margin-top: 1rem;
+font-size: 1.5rem;
+}
+
+.cc2{
+    box-shadow: 0rem 0rem .7rem  #6f42c1;
+    margin-top: 1.5rem;
+    margin-left: 3.5rem;
+    width: 15rem;
+    text-align: center;
+    padding-bottom: 2rem;
+    /* padding-left: .5rem; */
+    border: .1rem solid gray;
+
+}
+.cc2 ul li{
+    font-size: 1rem;
+    text-shadow: 0rem 0rem .1rem ;
+    /* list-style-type: disc; */
+
+}
+
+.cc3{
+    box-shadow: 0rem 0rem .7rem #6f42c1 ;
+    margin-top: 1.5rem;
+    margin-left: 3.5rem;
+    width: 15rem;
+    text-align: center;
+    padding-bottom: 2rem;
+    /* padding-left: .5rem; */
+    border: .1rem solid gray;
+
+}
+.cc3 ul li{
+    font-size: 1rem;
+    text-shadow: 0rem 0rem .1rem black;
+    /* list-style-type: disc; */
+
+}
+.find1{
+    padding-bottom:1rem ;
+    font-size: 1.2rem;
+}
+.find2{
+    font-size: .7rem;
+}
+.search{
+
+    margin-left: 1rem;
+}
+.search input{
+    height: 2rem;
+    width: 20rem;
+}
+.se{
+    margin-left: 15rem;
+}
+.se button{
+    font-size: 1rem;
+    width: 5rem;
+    height: 2rem;
+}
+.info{
+    display: block;
+}
+.b1{
+    margin-top: 1rem;
+}
+.user1{
+    position: absolute;
+    margin-top: .8rem;
+    font-weight: 700;
+    margin-left: 1.2rem;
+    font-size: 1.5rem; ;
+}
+.w{
+    margin-top: 5rem;
+    margin-left: 2rem;
+
+}
+.user{
+    margin-left: 2rem;
+    display: block;
+}
+
+.h{
+    text-shadow: 0rem 0rem .1rem #6f42c1;
+}
+.c{
+    margin-top: 1rem;
+}
+.fot{
+    height: 16rem;
+}
+.low{
+    font-size: 1.5rem;
+    margin-left: 1rem;
+}
+.low1{
+    margin-right: .4rem;
+    font-size: .8rem;
+    margin-left: 1rem;
+}
+.sear{
+    line-height: 2rem;
+        font-size: 1rem;
+    height: 2rem;
+    width: 8rem;
+    margin-left: 1rem;
+}
+
+p{
+    font-size: .7rem;
+}
+.footer{
+
+    margin-left: 1rem;
+}
+.r1,.r2,.r3,.r4,.r5 ul li{
+    font-size: .5rem;
+}
+.footer1{
+    height: 2rem;
+}
+.footer1 p1{
+    margin-left: 0rem;
+    font-size: .4rem;
+    line-height: 2rem;
+}
+.footer1 p2{
+    line-height: 2rem;
+    margin-left: 2rem;
+    font-size: .4rem;
+}
+
+.b1{
+    padding-top: 1rem;
+    height: 14rem;
+    margin-left: 2.1rem;
+    width: 17rem;
+}
+.headerBOX1{
+    font-size: 1rem;
+}
+.c{
+    font-size: .8rem;
+}
+.headerBOX2{
+    padding-top: .5rem;
+    font-size: 1rem;
+    text-shadow: 0rem 0rem .1rem black;
+}
+}
+
+</style>
+<link rel="stylesheet" href="index.css">
+</head>
+<body>
+        <div class="main">
+           <div class="main1">
+            <div class="header"><span class="headerLOGO"><img src="images.png" ><span class="logoName"> HOSTINGER</span></span>
+        
+                <div class="containt1">
+                    <ul>
+                        <li>Hosting</li>
+                        <li>VPS</li>
+                        <li>Email</li>
+                        <li>Domain</li>
+                    </ul>
+                </div>
+                <div class="contiant2">
+                    <ul>
+                        <li  ><img src="lock1.jpg "   class="one"><span class="para">Log In</span></li>
+                        <li class="cart"><img src="shopping-cart.png "   class="ones"><span class="para a">Cart</span></li>
+                    </ul>
+                </div>
+            </div>
+                
+            
+                <div class="containt">
+                    <div class="heade">power</div> 
+                    <div class="heade1">HOSTINGER</div>
+                    <div class="onees">HOST</div>
+                    <div class="onees1">BEST</div>
+                    <div class="onees2">Unique</div>
+    
+                </div>
+           </div>
+           <div class="save">Savings to Set Your Website in <br>Motion</div>
+           <div class="rupee"><span class="ya">₹
+        </span><span class="rupee1">149.00</span><span class="rupee2">/mo</span></div>
+           <div class="savee">Make moves with a free domain and SSL included<br> with a four-year subscription .</div>
+       <div class="timer"></div>
+       <div class="get">get started</div>
+       <div class="gete"> Get exclusive 30-day money-back guarantee</div>
+       <div class="gete1">All-In-One Web Hosting</div>
+       <div class="gete2">We prepared the best web hosting plan for you to start. You will be able to <br>adjust plans as you go - our custom-built algorithm will provide suggestions<br> based on your usage.</div>
+           <div class="box1">
+            <div class="headerBox"><span class="text">Best Web</span><span class="text1"> Hosting</span></div>
+        <div class="c1"><ul>
+            <li>  <b>Unmetered</b> traffic (Unlimited GB)    </li>
+            <li>  <b>100</b> Websites </li>
+            <li><b> 100 GB </b>SSD Storage     </li>
+            <li> <b>Free</b> Weekly Backups    </li>
+            <li>  <b>100</b> Parked domains   </li>
+            <li>   <b>100</b> Subdomains per account  </li>
+            <li>  <b>Full</b> DNS Editor   </li>
+            <li>  <b>Managed</b> WordPress  </li>
+            <li> <b>WordPress</b> acceleration   </li>
+            <li>  <b>WordPress</b> multisite </li>
+            <li> <b>WP-CLI</b>    </li>
+            <li>  <b>1-click</b> autoinstaller  </li>
+            <li>  <b>1 GB </b>email storage </li>
+            <li>  <b>100</b> email mailboxes </li>
+            <li>  <b>50</b> email aliases </li>
+            <li>  <b>5</b> Forwarders </li>
+            <li>  <b>Enterprise</b> Virus scanner </li>
+            <li>  <b>Enterprise</b> SPAM filter </li>
+            <li>  <b>WebMail</b> Access </li>
+            <li>  <b>Custom</b> Email Filters </li>
+            <li>  <b>IMAP/SMTP</b> </li>
+            <li> <b>Special offers</b> for Fiverr services  </li>
+            <li>  <b>FAQ</b> Database </li>
+        </ul></div> 
+        <div class="c2">
+          <div class="c21202">  <div class="c21"><span class="r">₹</span>
+            <span class="m">149.00</span>  <span class="moun">/mo</span>              </div>
+                   
+            <div class="c212">₹249.00/mo when you renew</div>  
+            <div class="butn">Select</div></div>
+<!-- <hr class="h"> -->
+<ul class="c2122">
+    <li><b>   40 </b>    Active Processes  </li>
+    <li><b>  20 </b>      Active Processes</li>
+    <li><b>  400 000 </b>   Inodes     </li>
+    <li><b>  Unlimited </b>  Cronjobs     </li>
+    <li><b>   Auto Script Installer
+    </b>     </li>
+    <li><b> Usage Monitoring and Statistics
+    </b>     </li>
+    <li><b>  Automated Scaling  </b>  suggestions     </li>
+    <li><b>  GIT  </b>   support    </li>
+    <li><b>   SSH Access   
+    </b>     </li>
+    <li><b>  Access Management </b>     </li>
+    <li><b>  99.9% </b>   Uptime Guarantee   </li>
+    <li><b>  Unlimited  </b>  FTP accounts    </li>
+    <li><b>  20 minutes average issue  </b> resolution time    </li>
+    <li><b>   24/7/365 </b>    chat and email service  </li>
+    <li><b>   Knowledge Base  </b>     </li>
+    <li><b>  Tutorials   </b>     </li>
+    <li><b>   Webinars</b>     </li>
+</ul>
+        </div>
+        <div class="c3">
+            <ul>
+                <li>  <b> Unlimited  </b>  databases  </li>
+                <li>  <b>  Unlimited  </b>  Free SSL   </li>
+                <li>  <b>  Free </b>  Domain    </li>
+                <li>  <b> Free  </b>  Email   </li>
+                <li>  <b> Optimized   </b>  for WordPress     </li>
+                <li>  <b>   3 GB</b>    database size </li>
+                <li>  <b> Unlimited   </b>    MySQL backup size</li>
+                <li>  <b>  MySQL backup size </b>   connections </li>
+                <li>  <b>   200 MB MySQL</b>  import size   </li>
+                <li>  <b>  16 MB MySQL </b>   packet size </li>
+                <li>  <b>  300 seconds MySQL  </b>  statement time  </li>
+                <li>  <b>  15 MySQL </b> user connections   </li>
+                <li>  <b>  user connections </b>    query time</li>
+                <li>  <b>   HTTP/3
+                </b>    </li>
+                <li> IPv6   <b>   </b>    </li>
+                <li>  <b>   10 </b>   MB/s I/O  </li>
+                <li>  <b> 128   </b>     IOPS </li>
+                <li>  <b> 1  </b>     CPU Core</li>
+                <li>  <b>  1 GB  </b>    RAM</li>
+                <li>  <b>  6 </b>   datacenter locations </li>
+                <li>  <b> Dynamic   </b>  PHP limits  </li>
+            </ul>
+        </div>
+        
+</div>
+ <div class="control"><u>Our services include:</u></div>
+ <div class="controlUL">
+    <div class="cc1">
+        <ul>
+            <li><a href="#">  Free SSL </a></li>
+            <li><a href="#">eCommerce Optimization   </a></li>
+            <li><a href="#">  Automated backups </a></li>
+            <li><a href="#"> PHP Speed Boost  </a></li>
+        </ul>
+    </div>
+    <div class="cc2">
+        <ul>
+            <li><a href="#"> One-Click WordPress Installation  </a></li>
+            <li><a href="#">  Auto Script Installer </a></li>
+            <li><a href="#">Access Management   </a></li>
+            <li><a href="#">  Free Migration </a></li>
+        
+        </ul>
+    </div>
+    <div class="cc3">
+        <ul>
+            <li><a href="#"> DDoS Protection  </a></li>
+            <li><a href="#">  LiteSpeed Cache Plugin
+
+            </a></li>
+            <li><a href="#"> 24/7/365 Tech Support
+
+            </a></li>
+            <li><a href="#"> 99.9% Uptime Guarantee
+
+            </a></li>
+        </ul>
+    </div>
+ </div>
+ <div class="find">
+    <div class="find1">Find the perfect domain name</div>
+    <div class="find2">Enter domain name of your choice and pick any extension name on the next step (choose between <br>.in, .com, .online, .live, .store, .info and many more)</div>
+    <div class="search"><input type="text" class="s" placeholder="Type in that prefect domain name"> <div class="se"><button >search</button></div> </div>
+</div>
+<div class="info">
+   <div class="b1">
+     <div class="headerBOX1">EASY TO USE AND SIMPLE</div>
+   <div class="headerBOX2">Easy to set up</div>
+   <div class="containtBOX c">Getting your website live is as simple as a click of a button. Everything you need - provided in a clear way.</div>
+   <div class="anc"><a href="#">learn more</a></div>
+</div>
+<div class="b1">
+    <div class="headerBOX1"> PERFORMANCE AND SPEED</div>
+  <div class="headerBOX2"> Lightning-fast websites</div>
+  <div class="containtBOX c"> Website speed can slow or grow your business. Delight your visitors with a fast-loading and optimized website.</div>
+  <div class="anc"><a href="#">learn more</a></div>
+</div>
+<div class="b1">
+    <div class="headerBOX1"> GREAT WORDPRESS EXPERIENCE</div>
+  <div class="headerBOX2"> WordPress made easy</div>
+  <div class="containtBOX c"> Start your website with an automatic 1-click WordPress installation. The backend is powered by LiteSpeed caching and advanced optimization to ensure your websites are fast, reliable and secure.</div>
+  <div class="anc"><a href="#">learn more</a></div>
+</div>
+<div class="b1">
+    <div class="headerBOX1">PROFESSIONAL AND HANDS-ON</div>
+  <div class="headerBOX2">24/7 Support</div>
+  <div class="containtBOX c"> Our team of experts will solve technical issues to get your websites up and running. Anytime.</div>
+  <div class="anc"><a href="#">learn more</a></div>
+</div>
+<div class="b1">
+    <div class="headerBOX1"> FLEXIBLE AND SCALABLE</div>
+  <div class="headerBOX2" > From micro to large-scale</div>
+  <div class="containtBOX c"> Different projects require different technologies. Pick a plan that matches your current needs, then upgrade and scale as your website grows.</div>
+  <div class="anc"><a href="#">learn more</a></div>
+</div>
+</div>
+<span class="user1">User-Friendly Control Panel</span>
+<div class="user">
+    <div class="ccc1 w">
+        <div class="h">Ease of Use</div>
+        <div class="c">Hostinger Panel is extremely user-friendly and can be used by those with little experience in website development.</div></div>          
+        <div class="ccc2 w"> <div class="h">Powerful</div>
+            <div class="c">A wide variety of tools to satisfy advanced user and website developer needs.
+
+            </div></div>
+            <div class="ccc3 w"><div class="h">WordPress Optimized</div>
+            <div class="c">Get more speed, better SEO, visitor retention and conversions with our custom-built WP optimization stack and LiteSpeed cache.</div></div>
+    
+</div>
+<div class="fot"><div class="low">30-Day Money-Back Guarantee</div>
+<div class="low1">We'll refund your payment if you’re not 100% satisfied with Hostinger. No hassle, no risk.</div>
+    <div class="sear">Start with us</div>   </div> 
+    <div class="footer">
+        <div class="r1">
+            <p>HOSTING</p>
+            <ul>
+                <li><a href="#">    Web Hosting</a></li>
+                <li><a href="#">  VPS Hosting  </a></li>
+                <li><a href="#"> Minecraft Server<br>hosting   </a></li>
+                <li><a href="#">   CyberPanel Hosting </a></li>
+                <li><a href="#">  Cloud Hosting  </a></li>
+                <li><a href="#">   WordPress Hosting </a></li>
+                <li><a href="#">   Email Hosting </a></li>
+                <li><a href="#">   CMS Hosting </a></li>
+                <li><a href="#">   Ecommerce Hosting </a></li>
+                <li><a href="#">    Free Web Hosting</a></li>
+                <li><a href="#">    Online Store</a></li>
+                <li><a href="#">  Website Builder  </a></li>
+                <li><a href="#">   Buy Hosting </a></li>
+            </ul>
+        </div>
+        <div class="r2">
+            <p>DOMAIN</p>
+            <ul>
+                <li><a href="#">   Domain Name Search </a></li>
+                <li><a href="#">    Domain Transfer</a></li>
+                <li><a href="#">    Free Domain Name</a></li>
+                <li><a href="#">    XYZ Domain</a></li>
+                <li><a href="#">   Cheap Domain </a></li>
+                <li><a href="#">    Domian Extension</a></li>
+                <li><a href="#">    WHOIS LookUp</a></li>
+                <li><a href="#">    Free SSL Certificate</a></li>
+            </ul>
+        </div>
+        <div class="r3">
+            <p>INFORMATION</p>
+            <ul>
+                <li><a href="#">  Migrate to Hostinger </a></li>
+                <li><a href="#">   System Status</a></li>
+                <li><a href="#">  Affiliate Program</a></li>
+                <li><a href="#">   Payment Methods</a></li>
+                <li><a href="#">   Reward</a></li>
+                <li><a href="#">   Review</a></li>
+                <li><a href="#">  Pricing </a></li>
+                <li><a href="#">   Sitemap</a></li>
+            </ul>
+            <p>LEGEL</p>
+            <ul>
+                <li><a href="#">    Privacy Policy</a></li>
+                <li><a href="#">    Term of Service</a></li>
+            </ul>
+        </div>
+        <div class="r4">
+            <p>COMPANY</p>
+            <ul>
+                <li><a href="#">    About Hostinger</a></li>
+                <li><a href="#">    Our Technology</a></li>
+                <li><a href="#">    Roadmap</a></li>
+                <li><a href="#">    Customer Care</a></li>
+                <li><a href="#">    Blog</a></li>
+            </ul>
+            <p>HELP</p>
+            <ul>
+                <li><a href="#">    Tutorials</a></li>
+                <li><a href="#">    Knowledge Base</a></li>
+                <li><a href="#">    Report Online Abuse</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="footer1"><p1>© 2004-2022 hostinger.in - India’s #1 Web Hosting & Domains provider.</p1><p2>Prices are listed without VAT</p2></div>
+
+</div>
+     
+  <script>
+  </script>     
+ </body>
+</html>
